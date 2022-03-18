@@ -1,0 +1,699 @@
+ /* Font Face */
+
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../fonts/SofiaPro-Medium.eot');
+    src: url('../fonts/SofiaPro-Medium.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SofiaPro-Medium.woff2') format('woff2'),
+        url('../fonts/SofiaPro-Medium.woff') format('woff'),
+        url('../fonts/SofiaPro-Medium.ttf') format('truetype');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../fonts/SofiaPro-Bold.eot');
+    src: url('../fonts/SofiaPro-Bold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SofiaPro-Bold.woff2') format('woff2'),
+        url('../fonts/SofiaPro-Bold.woff') format('woff'),
+        url('../fonts/SofiaPro-Bold.ttf') format('truetype');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../fonts/SofiaPro-Black.eot');
+    src: url('../fonts/SofiaPro-Black.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SofiaPro-Black.woff2') format('woff2'),
+        url('../fonts/SofiaPro-Black.woff') format('woff'),
+        url('../fonts/SofiaPro-Black.ttf') format('truetype');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../fonts/SofiaPro-Light.eot');
+    src: url('../fonts/SofiaPro-Light.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SofiaPro-Light.woff2') format('woff2'),
+        url('../fonts/SofiaPro-Light.woff') format('woff'),
+        url('../fonts/SofiaPro-Light.ttf') format('truetype');
+    font-weight: 300;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../fonts/SofiaPro.eot');
+    src: url('../fonts/SofiaPro.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SofiaPro.woff2') format('woff2'),
+        url('../fonts/SofiaPro.woff') format('woff'),
+        url('../fonts/SofiaPro.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Sofia Pro';
+    src: url('../fonts/SofiaPro-SemiBold.eot');
+    src: url('../fonts/SofiaPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+        url('../fonts/SofiaPro-SemiBold.woff2') format('woff2'),
+        url('../fonts/SofiaPro-SemiBold.woff') format('woff'),
+        url('../fonts/SofiaPro-SemiBold.ttf') format('truetype');
+    font-weight: 600;
+    font-style: normal;
+    font-display: swap;
+}
+
+
+
+
+body { margin: 0; padding: 0; font-family: 'Sofia Pro' !important; font-weight: 300; }
+.container { max-width: 1210px !important; width: 100%; }
+
+a.theme-btn { transition: all 0.3s; text-align: center;text-decoration: none; color: #fff; font-size: 16px; line-height: 16px; font-weight: 600; padding: 16px 55px; background-color: #009eb3; border-radius: 60px; }
+a.theme-btn:hover { box-shadow: 2px 5px 15px rgb(0 158 179 / 25%); }
+
+.green { color: #009EB3; }
+
+
+h1 { font-size: 54px; line-height: 60px; font-weight: 600; }
+h2 { font-size: 42px; line-height: 47px; font-weight: 800; }
+h3 { font-size: 42px; line-height: 47px; font-weight: 800; }
+h4 { font-size: 44px; line-height: 49px; font-weight: 600; }
+h5 { font-size: 38px; line-height: 42px; font-weight: 700; }
+h6 { font-size: 20px; line-height: 20px; font-weight: 800; }
+
+p { font-size: 18px; line-height: 22px; font-weight: 400; color: #616161; }
+
+.pt-120 { padding-top: 120px; }
+.pb-120 { padding-bottom: 120px; }
+
+.pt-60 { padding-top: 60px; }
+.pb-60 { padding-bottom: 60px; }
+
+
+/*  Header css start  */
+
+header .nabvar-wrapper { background-color: transparent; padding: 17px 0; position: fixed; top: 0; width: 100%; height: 100px; transition: all 0.4s ease; z-index: 999; }
+header .nabvar-wrapper.sticky { background-color: rgba(0, 0, 0, 0.6); transition: all 0.4s ease; box-shadow: 5px 10px 25px rgb(0 0 0 / 5%); }
+header .nabvar-wrapper ul li a { color: #ffffff !important; font-size: 16px; font-weight: 300; letter-spacing: 0.2px; padding-right: 38px !important; line-height: 27px; }
+header .nabvar-wrapper ul li a:hover { color: #009eb3 !important; }
+header .nabvar-wrapper a.header-btn { font-size: 16px; line-height: 28px; font-weight: 400; color: #fff; text-decoration: none; padding: 10px 80px; border: 2px solid #009EB3; border-radius: 50px; }
+
+/*  Header css end  */
+
+
+/*  banner css start  */
+
+.banner-wrapper { position: relative; background-image: url(../images/banner-bg.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; padding: 135px 15px 75px 15px; }
+.banner-wrapper h6 { font-size: 32px; line-height: 38px; font-weight: 400; }
+.banner-wrapper .left-col { position: relative; z-index: 2; }
+.banner-wrapper .left-col p { font-size: 20px; }
+.banner-wrapper:before { z-index: 1; right: 80px; top: -20px; position: absolute; content: ''; width: 158px; height: 182px; background-image: url(../images/banner-before.svg); background-repeat: no-repeat; background-position: center; }
+.banner-wrapper:after { background-size: cover; position: absolute; content: ''; background-image: url(../images/banner-after.svg); width: 614px; height: 772px; background-repeat: no-repeat; left: 0; bottom: 0; }
+.banner-wrapper .right-col { background-color: #fff; padding: 25px 35px; max-width: 480px; }
+.banner-wrapper .right-col h5 { font-size: 32px; line-height: 42px; color: #15181D; font-weight: 700; }
+.banner-wrapper .right-col h5 span { font-size: 24px; line-height: 31px; font-weight: 600; }
+
+.ic-listing { list-style: none; }
+.ic-listing li { font-size: 18px; line-height: 18px; color: #fff; font-weight: 300; padding-bottom: 10px; }
+
+form.form-wrapper .form-outline:nth-child(odd) { padding-right: 5px; }
+form.form-wrapper .form-outline:nth-child(even) { padding-left: 5px; }
+form.form-wrapper input,
+form.form-wrapper select { height: 50px; padding: 5px 20px; background: #FFFFFF; border-radius: 4px; border: 1px solid #D1D1D1; color: #15181D; margin-bottom: 18px; }
+form.form-wrapper select { -moz-appearance: none !important; -webkit-appearance: none !important; appearance: none !important; background-image: url(../images/arrow-down.svg); background-repeat: no-repeat; background-position: 90%; cursor: pointer; }
+form.form-wrapper input::placeholder,
+form.form-wrapper select::placeholder { color: #15181D !important; opacity: 1 !important; }
+form.form-wrapper button,
+form.form-wrapper button:hover { background: #009EB3; font-size: 16px; line-height: 16px; border-radius: 58px; border: none; padding: 17px 20px; font-weight: 600; letter-spacing: 0.3px; }
+form.form-wrapper button + p { font-size: 16px; line-height: 16px; }
+form.form-wrapper .form-check-main { display: block; position: relative; padding-left: 30px; margin-bottom: 12px; cursor: pointer; font-size: 22px; -webkit-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none; }
+form.form-wrapper .form-check-main input { position: absolute; opacity: 0; cursor: pointer; height: 0; width: 0; }
+form.form-wrapper .checkmark { position: absolute; top: 3px; left: 0; height: 20px; width: 20px; border: 1px solid #D1D1D1;border-radius: 3px; }
+form.form-wrapper .checkmark:after { content: ""; position: absolute; display: none; }
+form.form-wrapper .form-check-main input:checked ~ .checkmark:after { display: block; }
+form.form-wrapper .form-check-main input:checked ~ .checkmark { border-color: #009EB3; }
+form.form-wrapper .form-check-main .checkmark:after { left: 6px; top: 3.2px; width: 5px; height: 11px; border: solid #009EB3; border-width: 0 1.9px 1.9px 0; -webkit-transform: rotate(45deg); -ms-transform: rotate(45deg); transform: rotate(45deg); }
+form.form-wrapper label.form-check-main { text-align: left; font-size: 16px; line-height: 25px; color: #15181D; }
+form.form-wrapper .receive { color: #15181D; font-size: 16px; line-height: 16px; font-weight: 500; }
+
+/*  banner css end  */
+
+/* Counter css start  */
+
+.counter-wrapper { padding: 32px 25px; border-bottom: 1px solid #DEDEDE; }
+
+/* Counter css end  */
+
+/*   Img Text Css Start  */
+
+.img-text-wrapper .right-col { padding-left: 75px; }
+.img-text-wrapper .inner-row { flex-wrap: unset; }
+.img-text-wrapper .left-col .inner-img-2 { margin-top: 170px; margin-left: -40px; position: relative; }
+.img-text-wrapper .left-col .inner-img-2:before { background-size: cover; position: absolute; content: ''; left: -40px; top: -40px; z-index: 1; background-image: url(../images/data-driven-svg.svg); height: 87px; width: 87px; background-repeat: no-repeat; }
+.img-text-wrapper .left-col p { font-size: 16px; line-height: 18px; }
+
+/*   Img Text Css End  */
+
+/*  Client Review Css Start  */
+
+.client-review-wrapper .inner-row { flex-wrap: unset; }
+.client-review-wrapper .inner-review { padding: 35px 40px 25px 40px; border: 1px solid #DEDEDE; border-radius: 2px; margin: 0 7px; }
+.client-review-wrapper .inner-review .rating i { color: #EBBF22; margin: 0 3px; padding-bottom: 30px; }
+.client-review-wrapper .inner-review p { line-height: 25px; font-size: 16px; height: 115px; }
+.client-review-wrapper .inner-review .client-img h5 { font-size: 16px; line-height: 25px; font-weight: 700; }
+.client-review-wrapper .inner-review .client-img h6 { font-weight: 400; font-size: 16px; line-height: 25px; }
+
+/*  Client Review Css End  */
+
+/*  About Research Css Start  */
+
+.about-research-wrapper { position: relative; padding: 155px 0px 190px 0px; background-image: url(../images/all-about-research-bg.jpg); background-size: cover; background-repeat: no-repeat; background-position: center; }
+.about-research-wrapper .white-before { position: absolute; right: 0; top: 0; opacity: 0.2; }
+.about-research-wrapper .green-before { position: absolute; bottom: -64px; }
+.about-research-wrapper h3 { font-weight: 500; }
+.about-research-wrapper .inner-client p { line-height: 20px; font-weight: 600; }
+.about-research-wrapper .inner-client span { font-size: 14px; line-height: 16px; }
+
+/*  About Research Css End  */
+
+/* Research Backed Css Start  */
+
+.researc-backed-wrapper { padding: 170px 0 140px 0; overflow: hidden; }
+.researc-backed-wrapper .left-col { max-width: 600px; width: 100%; padding-right: 36px; }
+.researc-backed-wrapper .left-col p { padding-right: 50px; }
+
+/* Research Backed Css End  */
+
+/*   Purchase Properties Css Start  */
+
+.purchase-properties-wrapper h5 { padding-bottom: 70px; font-size: 24px; line-height: 28px; }
+.purchase-properties-wrapper ul { list-style: none; padding: 0; }
+.purchase-properties-wrapper ul li { padding-bottom: 45px; color: #616161; font-size: 18px; line-height: 20px; font-weight: 400; }
+.purchase-properties-wrapper .container { max-width: 835px !important; position: relative; z-index: 5; }
+.purchase-properties-wrapper .inner-info p { font-size: 20px; line-height: 22px; font-weight: 700; }
+
+/*   Purchase Properties Css End  */
+
+/*   Property Recommend Css Start  */
+
+.property-recommend-wrapper { background-image: url(../images/property-recommend-bg.jpg); }
+.property-recommend-wrapper .green-before { right: 0; top: -233px; }
+.property-recommend-wrapper .container { position: relative; }
+.property-recommend-wrapper .white-before { left: 0; right: unset; bottom: 0; top: unset; }
+
+/*   Property Recommend Css End  */
+
+/*   Average Sale Css Start   */
+
+.average-sale-wrapper { padding: 180px 15px; }
+.average-sale-wrapper .left-col { width: 54%; }
+.average-sale-wrapper .right-col { width: 46%; padding-left: 44px; }
+.average-sale-wrapper ul li { color: #616161; font-size: 18px; line-height: 22px; font-weight: 400; }
+
+/*   Average Sale Css End   */
+
+/*   Our Investment Services Css Start  */
+
+.investment-services-wrapper .inner-row { padding-top: 65px; }
+.investment-services-wrapper .inner-row .inner-content .no { position: absolute; left: 45px; top: -50px; background-color: #009EB3; height: 80px; width: 80px; border-radius: 100px; color: #fff; font-weight: 800; font-size: 43px; line-height: 72px; text-align: center; }
+.investment-services-wrapper .inner-row .inner-content { margin-bottom: 30px; min-height: 495px; position: relative; padding: 65px 65px 30px 65px; background: #FFFFFF; border: 1px solid #D9D9D9; border-radius: 0 0 21px 21px; }
+.investment-services-wrapper .inner-row .inner-content h5 { padding-bottom: 30px; font-size: 32px; line-height: 35px; }
+.investment-services-wrapper .inner-row .inner-content p { font-size: 16px; line-height: 25px; padding-bottom: 20px; }
+.investment-services-wrapper .inner-row .inner-content ul li { color: #616161; font-size: 16px; font-weight: 600; }
+.investment-services-wrapper .inner-row .inner-content ul li img { width: 24px; }
+.investment-services-wrapper .inner-row .reduce .inner-content { min-height: 450px; }
+
+/*   Our Investment Services Css End  */
+
+/*   How Rate Propeties Css Start   */
+
+.how-rate-properties-wrapper { background-color: #F3F8F9; position: relative; }
+.how-rate-properties-wrapper:after { position: absolute; content: ''; left: 0; bottom: 0; background-image: url(../images/properties-after.svg); background-repeat: no-repeat; background-size: cover; height: 437px; width: 616px; }
+.how-rate-properties-wrapper:before { position: absolute; content: ''; right: 0; top: 0; background-image: url(../images/properties-before.svg); background-repeat: no-repeat; background-size: cover; height: 407px; width: 550px; }
+.how-rate-properties-wrapper h5 { font-size: 38px; color: #303032; line-height: 42px; padding-bottom: 50px; }
+.how-rate-properties-wrapper .inner-row { max-width: 610px; width: 100%; margin: 0 auto; position: relative; z-index: 2; }
+.how-rate-properties-wrapper .inner-row .right-col { padding-left: 75px; }
+
+/*   How Rate Propeties Css End   */
+
+/*   Case Study Css Start   */
+
+.case-study-wrapper .nav-tabs li { width: 25%; text-align: center; }
+.case-study-wrapper .nav-tabs li button { min-height: 50px; border: 1px solid #D3D3D3 !important; border-right: 0 !important; width: 100%; border-radius: 0; color: #303032; font-size: 16px; line-height: 25px; font-weight: 700; }
+.case-study-wrapper .nav-tabs li button.active { background-color: #009EB3; color: #fff; }
+.case-study-wrapper .nav-tabs li:first-child button { border-radius: 100px 0 0 100px !important; }
+.case-study-wrapper .nav-tabs li:last-child button { border-right: 1px solid #D3D3D3 !important; border-radius: 0 100px 100px 0 !important; }
+.case-study-wrapper .blue-wrapper .play-btn { position: absolute; z-index: 2; top: 50%; left: 50%; transform: translate(-50%, -50%); background-color: transparent; border: 0; }
+.case-study-wrapper .blue-wrapper { position: relative; padding-bottom: 60px; } 
+.case-study-wrapper .inner-row { padding-top: 60px; }
+.case-study-wrapper .inner-row .quotes { position: relative; padding-left: 50px; }
+.case-study-wrapper .inner-row .quotes:before { position: absolute; content: ''; height: 100%; width: 7px; background-color: #009EB3; left: 0; top: 0; }
+.case-study-wrapper .inner-row .quotes h5 { font-size: 32px; line-height: 36px; color: #262629; font-weight: 400; }
+.case-study-wrapper .inner-row .quotes h6 { font-size: 16px; line-height: 21px; font-weight: 400; }
+.case-study-wrapper .inner-row .quotes span { font-size: 16px; line-height: 21px; font-weight: 600; }
+.case-study-wrapper .inner-row .right-col { padding-left: 90px; }
+.case-study-wrapper .inner-row .right-col h5 { color: #303032; font-size: 24px; line-height: 27px; font-weight: 700; }
+.case-study-wrapper .inner-row .right-col h6 { font-size: 18px; line-height: 28px; font-weight: 700; color: #303032; padding-top: 22px; }
+.case-study-wrapper .inner-row .right-col p { font-size: 16px; line-height: 25px; }
+
+/*   Case Study Css End   */
+
+/*   Testimonial Slider Css Start   */
+
+.testimonial-wrapper { background-image: url(../images/testimonial-bg.svg); background-repeat: no-repeat; background-size: cover; background-position: center; position: relative; }
+.testimonial-wrapper h5 { color: #fff; font-size: 18px; line-height: 24px; font-weight: 500; }
+.testimonial-wrapper h5 span { font-weight: 300; }
+.testimonial-wrapper p { font-size: 32px; line-height: 36px; font-weight: 300; max-width: 942px; width: 100%; margin: 0 auto; }
+.testimonial-wrapper .slick-arrow { z-index: 3; position: absolute; top: 50%; transform: translateY(-50%); padding: 0; cursor: pointer; }
+.testimonial-wrapper .slick-arrow.left { left: 0; }
+.testimonial-wrapper .slick-arrow.right { right: 0; }
+.testimonial-wrapper .slick-dots { display: flex; margin-top: 20px; justify-content: center; align-items: center; }
+.testimonial-wrapper .slick-dots li button { margin: 0 3px; font-size: 0; padding: 0; border: 0; width: 30px; height: 5px; border-radius: 30px; background: #FFFFFF; opacity: 0.3; }
+.testimonial-wrapper .slick-dots li.slick-active button { opacity: 1; background: #009EB3; }
+.testimonial-wrapper .green-before { position: absolute; top: -79px; }
+
+/*   Testimonial Slider Css End   */
+
+/*   Creating Wealth Css Start   */
+
+.creating-wealth-wrapper { background-image: url(../images/creating-wealth-bg.jpg); }
+
+/*   Creating Wealth Css End   */
+
+/*   In Media Css Start   */
+
+.in-media-wrapper .main-container { margin: 0 auto; padding-top: 35px; display: table; width:100%; height:100%; }
+.in-media-wrapper .main-container .box {  padding: 0 8px; display: table-cell; height:100%; width: 25%; -webkit-transition:width 500ms; -moz-transition:width 500ms; transition:width 500ms; }
+.in-media-wrapper .main-container .box .inner-box { padding: 0; box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.11); border-radius: 11px; }
+.in-media-wrapper .main-container:hover .box:hover { width: 32%; } 
+.in-media-wrapper .main-container img.img-fluid { width: 100%; }
+.in-media-wrapper .main-container a { text-decoration: none; }
+.in-media-wrapper .main-container .box:hover h5 { font-size: 24px; line-height: 32px; }
+.in-media-wrapper .main-container h5 { font-size: 20px; line-height: 26px; font-weight: 400; color: #303032; }
+.in-media-wrapper .main-container .content-box {  padding: 25px 35px; }
+.in-media-wrapper .main-container .content-box a { color: #303032; font-size: 16px; line-height: 21px; font-weight: 500; }
+
+/*   In Media Css End   */
+
+/*   Bottom Form Css Start   */
+
+.market-evaluation-wrapper { background-color: #009EB3; position: relative; }
+.market-evaluation-wrapper .inner-row { max-width: 730px; width: 100%; margin: 0 auto; }
+.market-evaluation-wrapper .inner-row p { font-weight: 300; }
+.market-evaluation-wrapper .inner-row form.form-wrapper input, 
+.market-evaluation-wrapper .inner-row form.form-wrapper select { border-radius: 0; border: 0; margin-bottom: 10px; }
+.market-evaluation-wrapper .inner-row form.form-wrapper input::placeholder, 
+.market-evaluation-wrapper .inner-row form.form-wrapper select::placeholder { color: #616161 !important; }
+.market-evaluation-wrapper .inner-row form.form-wrapper .checkmark { border-radius: 0; border-color: #fff; top: 0; }
+.market-evaluation-wrapper .inner-row form.form-wrapper label { padding-left: 35px; color: #fff; font-size: 16px; line-height: 16px; font-weight: 300; padding-bottom: 10px; }
+.market-evaluation-wrapper .inner-row form.form-wrapper .form-check-main input:checked ~ .checkmark { border-color: #fff; background-color: #fff; }
+.market-evaluation-wrapper .inner-row form.form-wrapper .form-check-main .checkmark:after { top: 2px; }
+.market-evaluation-wrapper .inner-row form.form-wrapper button { color: #202020; background-color: #fff; max-width: 380px; width: 100%; font-weight: 700; }
+
+/*   Bottom Form Css End   */
+
+/*   Footer Css Start  */
+
+footer.footer-wrapper { padding: 78px 0px 0px 0px; background-color: #192223; }
+footer.footer-wrapper .add-call { padding: 40px 0 55px 0; }
+footer.footer-wrapper p a { color: #fff; text-decoration: none; font-size: 16px; line-height: 22px; text-transform: uppercase; font-weight: 200; }
+footer.footer-wrapper p.mobile a { font-size: 24px; line-height: 32px; font-weight: 600; }
+
+footer.footer-wrapper ul { padding-bottom: 70px; list-style: none; }
+footer.footer-wrapper ul li a {transition: all 0.3s; margin-right: 10px; height: 56px; width: 56px; line-height: 56px; text-align: center; color: #fff; border-radius: 50px; border: 1px solid #656565; display: block; }
+footer.footer-wrapper ul li a:hover { background-color: rgba(255, 255, 255, 0.3); }
+footer.footer-wrapper ul li a i { color: #fff; }
+
+footer.footer-wrapper .bottom-bar { border-top: 1px solid #d3d3d32b; padding: 44px 15px; }
+footer.footer-wrapper p { font-weight: 300; }
+footer.footer-wrapper .bottom-bar p a { text-transform: capitalize; font-size: 18px; line-height: 20px; }
+footer.footer-wrapper .bottom-bar ul li a,
+footer.footer-wrapper .bottom-bar ul li a:hover { background-color: transparent; text-decoration: none; font-size: 18px; line-height: 20px; color: #fff; font-weight: 400; height: auto; width: auto; border: none; }
+footer.footer-wrapper .bottom-bar ul li span { color: #fff; margin-right: 10px; }
+
+footer.footer-wrapper .bottom-development { background-color: #101717; padding: 25px 15px; }
+
+
+/*   Footer Css End  */
+
+
+@media all and (max-width: 1441px) { 
+
+.pt-120 { padding-top: 70px; }
+.pb-120 { padding-bottom: 70px; }
+
+/*  Header css start  */
+
+header .nabvar-wrapper ul li a { padding-right: 15px !important; }
+header .nabvar-wrapper a.header-btn { padding: 7px 30px; }
+
+.banner-wrapper:before { right: 0; background-size: cover; width: 90px; height: 80px; }
+.banner-wrapper:after { width: 400px; height: 530px; }
+
+.about-research-wrapper { padding: 100px 0px 150px 0px; }
+.about-research-wrapper .white-before { width: 30%; }
+
+.client-review-wrapper .inner-row { flex-wrap: wrap; justify-content: space-between; }
+.client-review-wrapper .inner-review { width: 31.90%; }
+
+.researc-backed-wrapper { padding: 130px 0 100px 0; }
+
+.average-sale-wrapper { padding: 70px 15px; }
+
+.investment-services-wrapper .inner-row { padding-top: 25px; }
+.investment-services-wrapper .inner-row .five .inner-content,
+.investment-services-wrapper .inner-row .six .inner-content { margin-bottom: 0; }
+
+.property-recommend-wrapper .green-before { top: -178px; }
+
+.how-rate-properties-wrapper h5,
+.purchase-properties-wrapper h5 { padding-bottom: 30px; }
+.purchase-properties-wrapper ul li:last-child { padding-bottom: 10px; }
+
+}
+
+@media all and (max-width: 1350px) {  
+
+/* Banner css start */
+
+h1 { font-size: 45px; }
+h2 { font-size: 36px; }
+h4,
+h3 { font-size: 38px; line-height: 44px; }
+
+br { display: none; }
+
+header .nabvar-wrapper ul li a { font-size: 14px !important; padding: 7px !important; padding-right: 10px !important; }
+header .nabvar-wrapper a.header-btn { font-size: 13px !important; }
+
+.pt-120 { padding-top: 60px; }
+.pb-120 { padding-bottom: 60px; }
+
+.banner-wrapper h6 { font-size: 30px; }
+.banner-wrapper .left-col { padding-right: 20px; }
+.banner-wrapper h5 br { display: block !important; }
+
+.img-text-wrapper .right-col { padding-left: 40px; }
+.img-text-wrapper .left-col p { padding-right: 45px; }
+
+.client-review-wrapper .inner-review { padding: 30px 25px 25px 25px; margin: 0 5px; }
+.client-review-wrapper .inner-review .rating i { padding-bottom: 20px; }
+.client-review-wrapper .inner-review p { height: auto; }
+
+.about-research-wrapper h3 { padding-bottom: 30px; }
+
+.green-before { width: 120px; }
+.about-research-wrapper .green-before { bottom: -49px; }
+
+.researc-backed-wrapper { padding: 100px 0 80px 15px; }
+.researc-backed-wrapper .left-col { max-width: 50%; }
+.researc-backed-wrapper .left-col p { padding-right: 0; }
+
+.how-rate-properties-wrapper:before,
+.how-rate-properties-wrapper:after { height: 220px; width: 330px; }
+
+.case-study-wrapper .inner-row .right-col { padding-left: 40px; }
+
+.testimonial-wrapper .green-before { top: -59px; }
+.testimonial-wrapper .slick-arrow { width: 55px !important; }
+.testimonial-wrapper p { font-size: 28px; }
+
+.investment-services-wrapper .inner-row .inner-content { padding: 60px 40px 30px 40px; }
+.investment-services-wrapper .inner-row .inner-content .no { left: 30px; }
+
+.in-media-wrapper .main-container .box:first-child { padding-left: 0; }
+.in-media-wrapper .main-container .box:last-child { padding-right: 0; }
+.in-media-wrapper .main-container .content-box { padding: 20px 25px; }
+.in-media-wrapper .main-container .box:hover h5 { font-size: 22px; line-height: 30px; }
+
+.property-recommend-wrapper .green-before { top: -159px; }
+
+.average-sale-wrapper .right-col { padding-left: 30px; }
+
+.creating-wealth-wrapper .green-before { top: -159px; }
+
+footer.footer-wrapper { padding: 70px 0 0 0; }
+
+footer.footer-wrapper .bottom-bar { padding: 35px 15px; }
+footer.footer-wrapper p { font-size: 16px; }
+footer.footer-wrapper .bottom-bar ul li:last-child a { margin-right: 0; }
+footer.footer-wrapper .bottom-bar ul li a { font-size: 16px; }
+footer.footer-wrapper .bottom-development { padding: 20px 15px; }
+
+}
+
+@media all and (max-width:  1100px) { 
+
+.testimonial-wrapper p { padding-left: 60px; padding-right: 60px; }
+
+}
+
+@media all and (max-width:  1024px) { 
+
+h2 { font-size: 30px; line-height: 40px; }
+h4, 
+h3 { font-size: 32px; line-height: 40px; }
+h5,
+.investment-services-wrapper .inner-row .inner-content h5,
+.how-rate-properties-wrapper h5 { font-size: 30px; line-height: 40px; }
+
+p { font-size: 16px; line-height: 20px; }
+
+.pt-120 { padding-top: 50px; }
+.pb-120 { padding-bottom: 50px; }
+
+.banner-wrapper h1 { padding-bottom: 10px !important; }
+.banner-wrapper h6 { font-size: 25px; }
+.banner-wrapper .right-col h5 { font-size: 28px; line-height: 35px; }
+.banner-wrapper .right-col h5 span { font-size: 20px; line-height: 25px; }
+form.form-wrapper label.form-check-main { font-size: 14px; line-height: 22px; }
+
+.counter-wrapper p { font-size: 16px; line-height: 19px; }
+
+.img-text-wrapper h5,
+.researc-backed-wrapper h5 { padding: 15px 0 !important; margin-bottom: 0 !important; }
+
+.client-review-wrapper .inner-review { padding: 30px 20px 25px 20px; }
+
+}
+
+
+@media all and (max-width:  991px) { 
+
+.nabvar-wrapper .navbar-toggler { position: absolute; top: 50%; right: 15px; border: none; padding: 0; transform: translateY(-50%); }
+.nabvar-wrapper .navbar-toggler .navbar-toggler-icon { filter: brightness(0) invert(1); }
+.nabvar-wrapper .navbar-toggler:focus { border: none; outline: none; box-shadow: none; }
+.nabvar-wrapper .navbar-collapse { position: absolute; top: 98px; width: 100%; left: 0; background-color: #fff; padding: 25px 15px 30px 15px; box-shadow: 2px 5px 15px rgba(0, 0, 0, 0.2); }
+.nabvar-wrapper .navbar-collapse ul { align-items: flex-start !important; }
+.nabvar-wrapper .navbar-collapse ul li a { color: #363636 !important; font-weight: 500; font-size: 17px !important; }
+header .nabvar-wrapper a.header-btn { font-size: 17px !important; color: #009EB3; padding: 7px 40px; margin-top: 14px; }
+
+.banner-wrapper .inner-row { flex-direction: column-reverse; }
+.banner-wrapper .left-col,
+.banner-wrapper .right-col { width: 100%; max-width: 100%; position: relative; z-index: 5; } 
+.banner-wrapper .right-col { margin-bottom: 30px; }
+
+.img-text-wrapper .inner-row { flex-wrap: wrap; }
+.img-text-wrapper .inner-row .left-col { width: 100%; padding-right: 15px !important; }
+.img-text-wrapper .inner-row .left-col .inner-img-1 { width: 50%; }
+.img-text-wrapper .inner-row .left-col .inner-img-1 > img { width: 100%; }
+.img-text-wrapper .left-col .inner-img-2 { margin-left: 0; }
+.img-text-wrapper .right-col { padding-left: 15px; padding-top: 30px; }
+
+.about-research-wrapper { padding: 100px 0px 120px 0px; }
+
+.researc-backed-wrapper .inner-row { align-items: center !important; }
+.researc-backed-wrapper .left-col { padding-right: 25px; }
+
+.client-review-wrapper .inner-review { width: 32%; }
+
+.purchase-properties-wrapper .container,
+.how-rate-properties-wrapper .inner-row { max-width: 100% !important; }
+
+.average-sale-wrapper .right-col { padding-left: 20px; }
+
+.case-study-wrapper .blue-wrapper { padding-bottom: 25px; }
+.case-study-wrapper .blue-wrapper img { width: 100%; }
+.case-study-wrapper .inner-row .quotes { padding-left: 35px; margin-bottom: 35px; }
+.case-study-wrapper .inner-row .right-col { padding-left: 0; }
+.case-study-wrapper .inner-row .right-col h6 { padding-top: 10px; }
+.case-study-wrapper .inner-row .quotes h5 { font-size: 28px; line-height: 35px; }
+
+.testimonial-wrapper p { font-size: 22px; line-height: 35px; padding-left: 80px; padding-right: 80px; }
+
+.in-media-wrapper .main-container { padding-top: 20px; }
+.in-media-wrapper .before-img { padding-bottom: 10px !important; }
+
+.investment-services-wrapper .inner-row .inner-content h5 { padding-bottom: 20px !important; margin-bottom: 0 !important; }
+.investment-services-wrapper .inner-row .inner-content p { margin-bottom: 0 !important; }
+
+form.form-wrapper .receive { text-align: left; width: 100%; }
+
+footer.footer-wrapper { padding-top: 50px; }
+footer.footer-wrapper ul { padding-bottom: 40px; }
+footer.footer-wrapper .bottom-bar { padding: 25px 15px; }
+footer.footer-wrapper .bottom-bar .bottom-inner { flex-direction: column; }
+footer.footer-wrapper .copyright { padding-bottom: 15px; }
+
+}
+
+@media all and (max-width:  767px) {
+
+h5 { margin-bottom: 0 !important; }
+
+.counter-wrapper .inner-box.one,
+.counter-wrapper .inner-box.two { margin-bottom: 20px; }
+
+.client-review-wrapper .inner-review { width: 100%; margin: 0; margin-bottom: 15px; }
+.client-review-wrapper .inner-review:last-child { margin-bottom: 0; }
+
+.researc-backed-wrapper { padding: 90px 15px 55px 15px; }
+.researc-backed-wrapper .inner-row { flex-direction: column-reverse; }
+.researc-backed-wrapper .left-col { max-width: 100%; padding-right: 15px; padding-top: 35px; }
+.researc-backed-wrapper .left-col p.pb-5 { padding-bottom: 30px !important; margin-bottom: 0 !important; }
+
+.purchase-properties-wrapper h5,
+.how-rate-properties-wrapper h5 { padding-bottom: 18px; }
+.purchase-properties-wrapper ul li { padding-bottom: 25px; }
+
+.purchase-properties-wrapper { padding-bottom: 100px; }
+
+.average-sale-wrapper { padding: 50px 15px 65px 15px; }
+.average-sale-wrapper ul { padding-bottom: 25px !important; padding-left: 20px; }
+.average-sale-wrapper ul li { font-size: 16px; }
+.average-sale-wrapper .left-col,
+.average-sale-wrapper .right-col,
+.how-rate-properties-wrapper .inner-row .right-col { width: 100%; padding-left: 0; }
+
+.investment-services-wrapper h5 { margin-bottom: 0 !important; }
+.investment-services-wrapper .inner-row .inner-content,
+.investment-services-wrapper .inner-row .reduce .inner-content { min-height: unset; }
+.investment-services-wrapper .inner-row .five .inner-content { margin-bottom: 30px; }
+
+.how-rate-properties-wrapper { padding-bottom: 60px; }
+
+.case-study-wrapper .inner-row { padding-top: 30px; }
+
+.before-img { padding-bottom: 10px !important; }
+
+.case-study-wrapper .inner-row .right-col p.pb-5 { padding-bottom: 25px !important; }
+
+.in-media-wrapper .main-container { display: flex; flex-wrap: wrap; }
+.in-media-wrapper .main-container .box,
+.in-media-wrapper .main-container:hover .box:hover { width: 100%; padding: 0; margin-bottom: 15px; }
+.in-media-wrapper .main-container .box:hover h5 { font-size: 20px; line-height: 26px; }
+
+.market-evaluation-wrapper .container,
+.market-evaluation-wrapper .container .full-content { padding: 0; }
+.market-evaluation-wrapper .inner-row form.form-wrapper label { padding-right: 8px; }
+
+
+footer.footer-wrapper .logo { width: 250px; }
+footer.footer-wrapper ul { padding-left: 0; }
+footer.footer-wrapper .add-call { padding: 40px 0 40px 0; }
+footer.footer-wrapper p,
+footer.footer-wrapper .bottom-bar ul li a,
+footer.footer-wrapper .bottom-bar p a { font-size: 14px; }
+
+}
+
+
+@media all and (max-width: 550px) { 
+
+a.theme-btn { padding: 14px 15px; display: block; }
+
+h1 { font-size: 38px; line-height: 42px; }
+h5, 
+.investment-services-wrapper .inner-row .inner-content h5, 
+.how-rate-properties-wrapper h5,
+h4, 
+h3 { font-size: 26px; line-height: 34px; }
+
+.banner-wrapper .right-col { padding: 25px 20px; }
+form.form-wrapper .form-outline { width: 100%; padding-left: 0 !important; padding-right: 0 !important; }
+form.form-wrapper .form-outline select { padding: 5px 20px !important; background-position: 95%; }
+form.form-wrapper input, 
+form.form-wrapper select { margin-bottom: 10px; }
+form.form-wrapper button { padding: 15px 5px; font-size: 14px; }
+form.form-wrapper button + p { font-size: 14px; }
+
+.banner-wrapper:after { width: 300px; height: 350px; }
+.banner-wrapper { overflow: hidden; padding-bottom: 30px; }
+.banner-wrapper h6 { font-size: 22px; line-height: 30px; }
+.banner-wrapper .left-col { padding-right: 0; }
+.banner-wrapper .left-col p { font-size: 16px; line-height: 22px; margin-bottom: 0 !important; }
+.ic-listing li { font-size: 16px; }
+
+.counter-wrapper { padding: 30px 15px; }
+.counter-wrapper .inner-box,
+.counter-wrapper .container { padding: 0; }
+
+.img-text-wrapper .inner-row .left-col { flex-wrap: wrap; }
+.img-text-wrapper .inner-row .left-col .inner-img-1 { width: 100%; }
+.img-text-wrapper .left-col .inner-img-2 { margin-top: 30px; }
+.img-text-wrapper .left-col .inner-img-2:before { left: 50%; transform: translateX(-50%); }
+.img-text-wrapper .left-col p { padding-right: 10px; }
+.img-text-wrapper .left-col .inner-img-2:before { height: 75px; width: 75px; }
+
+.green-before { width: 95px; }
+.before-img h6 { font-size: 18px; }
+
+.about-research-wrapper .inner-client img { width: 55px; }
+.about-research-wrapper { padding: 70px 0px 100px 0px; }
+.about-research-wrapper .green-before { bottom: -38px; }
+
+.researc-backed-wrapper { padding: 80px 15px 55px 15px; }
+
+.purchase-properties-wrapper .inner-info p { font-size: 16px; }
+.purchase-properties-wrapper { padding-bottom: 80px; }
+.property-recommend-wrapper .green-before { top: -116px; }
+
+.how-rate-properties-wrapper { padding-bottom: 40px; }
+
+.average-sale-wrapper { padding-bottom: 50px; }
+.average-sale-wrapper .right-col { padding-top: 30px; }
+.average-sale-wrapper h5 { padding: 10px 0 !important; margin-bottom: 0 !important; }
+
+.investment-services-wrapper .inner-row .inner-content { padding: 50px 20px 30px 20px; }
+.investment-services-wrapper .inner-row .inner-content .ic-listing { padding-top: 15px !important; }
+.investment-services-wrapper .inner-row .inner-content .no { height: 60px; width: 60px; font-size: 35px; line-height: 55px; top: -35px; left: 20px; font-weight: 600; }
+
+.case-study-wrapper .inner-row .quotes { padding-left: 30px; margin-bottom: 30px; }
+.case-study-wrapper .inner-row .quotes h5 { font-size: 24px; line-height: 30px; }
+.case-study-wrapper .nav-tabs { margin-top: 0 !important; }
+.case-study-wrapper .nav-tabs li.nav-item { width: 100%; }
+.case-study-wrapper .nav-tabs li.nav-item button { border-radius: 100px !important; border-right: 1px solid #d3d3d3 !important; }
+
+.in-media-wrapper .main-container .content-box { padding: 20px 20px; }
+
+.testimonial-wrapper .green-before { top: -47px; }
+.testimonial-wrapper .inner-slides img { width: 70px; }
+.testimonial-wrapper .slick-arrow { width: 50px !important; }
+.testimonial-wrapper p { font-size: 18px; line-height: 26px; padding-right: 60px; padding-left: 60px; }
+
+footer.footer-wrapper p a { font-size: 14px; }
+footer.footer-wrapper p.mobile a { font-size: 22px; line-height: 28px; }
+footer.footer-wrapper .bottom-bar .bottom-inner { padding: 0; }
+footer.footer-wrapper ul { flex-wrap: wrap; justify-content: center; align-items: center; }
+footer.footer-wrapper .bottom-development p { flex-direction: column; }
+footer.footer-wrapper .bottom-development p img { margin-left: 0 !important; margin-top: 8px; }
+footer.footer-wrapper ul li:last-child a { margin-right: 0; }
+
+}
+
+@media all and (max-width: 360px) {   
+
+
+
+}
